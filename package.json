@@ -1,0 +1,33 @@
+{
+  "name": "xo-react-issue",
+  "description": "asdf",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt Granmoe",
+  "scripts": {
+    "test": "NODE_ENV=test && jest",
+    "compile": "NODE_ENV=production babel index.js -d dist",
+    "prepublishOnly": "npm run compile"
+  },
+  "prettier": {
+    "semi": false,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "prettier": true,
+    "space": true
+  },
+  "devDependencies": {
+    "eslint-config-xo-react": "0.17.0",
+    "eslint-plugin-react": "7.11.1",
+    "eslint-plugin-react-hooks": "1.6.1",
+    "prettier": "1.18.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "xo": "^0.23.0"
+  }
+}
